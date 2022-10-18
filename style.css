@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Oswald", Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+}
+img {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  width: 6rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 24px;
+}
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+main {
+  padding: 0 30px;
+}
+.about {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.jumbo {
+  width: 51rem;
+}
+.jumbo img {
+  border-radius: 10px;
+  box-shadow: 3px 3px 3px #2e2e2e;
+}
+
+.teks {
+  width: 87%;
+  margin-top: 3px;
+}
+.mt-5 {
+  margin-top: 11px;
+}
+
+.text-center {
+  text-align: center;
+}
+.row {
+  display: flex;
+  justify-content: center;
+}
+.gambar {
+  background-color: #eaeaea;
+  margin: 12px;
+  padding: 9px;
+  border-radius: 9px;
+  flex-basis: 15rem;
+}
+.row .gambar a {
+  text-decoration: none;
+  color: black;
+}
+
+.slide {
+  transform: translateY(0);
+  transition: 0.9s;
+  opacity: 1;
+  color: white;
+}
+
+.color {
+  color: white;
+  transition: 0.9s;
+}
+
+/*start responsive */
+@media (max-width: 650px) {
+  ul {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(58, 197, 93, 7), rgb(34, 139, 134));
+    top: 0;
+    right: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+    transform: translateY(-900px);
+    transition: 0.9s;
+    opacity: 0.6;
+  }
+  ul li {
+    width: 60px;
+    border-radius: 5px;
+    padding: 4px;
+  }
+
+  nav ul li:hover {
+    background-color: black;
+  }
+
+  nav ul li a {
+    color: white;
+    font-size: 1.5em;
+  }
+
+  nav .hamburger {
+    font-size: 1.3em;
+    display: inherit;
+    z-index: 99;
+    cursor: pointer;
+  }
+  .teks {
+    width: auto;
+  }
+}
+
+/* end responsive */

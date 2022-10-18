@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(to right, rgb(58, 197, 93, 7), rgb(34, 139, 134));
+}
+img {
+  width: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+.logo {
+  width: 6rem;
+}
+nav ul {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  margin-left: 24px;
+}
+nav ul li a {
+  font-size: 1.2em;
+  text-decoration: none;
+  color: black;
+  opacity: 0.9;
+}
+
+nav ul li a:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+nav .hamburger {
+  display: none;
+}
+
+section {
+  width: 450px;
+  margin: 50px auto;
+  height: 270px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 6px rgba(0, 0, 0, 6);
+}
+
+.heading {
+  letter-spacing: 1px;
+  text-align: center;
+}
+.slide {
+  transform: translateY(0);
+  transition: 0.9s;
+  opacity: 1;
+}
+
+.color {
+  color: white;
+  transition: 0.9s;
+}
+
+/* start form */
+.icon {
+  position: relative;
+}
+input[type="text"],
+input[type="email"],
+select {
+  box-sizing: border-box;
+  width: 300px;
+  margin-top: 9px;
+  padding: 8px;
+}
+.icon i {
+  position: absolute;
+  top: 19px;
+  right: 10px;
+  opacity: 0.5;
+}
+.dropdown {
+  margin-top: 9px;
+  text-align: center;
+}
+.dropdown label {
+  font-size: 17px;
+}
+.button {
+  text-align: center;
+}
+button[type="submit"] {
+  margin-top: 9px;
+  width: 90px;
+  padding: 4px;
+  font-size: 18px;
+  background-color: rgb(25, 253, 25);
+  border: transparent;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* end form */
+
+/* start responsive */
+@media (max-width: 650px) {
+  ul {
+    position: absolute;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(to right, rgb(58, 197, 93, 7), rgb(34, 139, 134));
+    top: 0;
+    right: 0;
+    height: 100vh;
+    justify-content: space-evenly;
+    flex-direction: column;
+    z-index: 1;
+    text-align: center;
+    transform: translateY(-900px);
+    transition: 0.9s;
+    opacity: 0.6;
+  }
+  ul li {
+    width: 69px;
+    border-radius: 5px;
+    padding: 2px;
+  }
+  ul li:hover {
+    background-color: black;
+  }
+  nav ul li a {
+    font-size: 1.5em;
+    color: white;
+  }
+  nav .hamburger {
+    font-size: 1.3em;
+    display: inherit;
+    z-index: 99;
+    cursor: pointer;
+  }
+  section {
+    width: 300px;
+  }
+  input[type="text"],
+  input[type="email"],
+  select {
+    width: 230px;
+  }
+  .icon,
+  .dropdown {
+    margin-top: 14px;
+  }
+}
+/* end responsive */

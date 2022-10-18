@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&display=swap" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/7d8ba5a2d6.js" crossorigin="anonymous"></script>
+    <title>Home</title>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img src="img/logo.png" alt="" />
+      </div>
+      <ul id="menu">
+        <li><a href="/">Home</a></li>
+        <li><a href="pages/form/">Form</a></li>
+      </ul>
+      <i class="fa-solid fa-bars hamburger"></i>
+    </nav>
+    <main>
+      <section class="about">
+        <div class="jumbo">
+          <img src="img/jumbo.jpg" alt="" />
+        </div>
+        <div class="teks mt-5">
+          <h1>About Dibimbing</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nam distinctio porro ipsum minus non tempora.
+            Sint dicta eos in provident quis est? Dolorum impedit ratione ut veniam cum quae laudantium harum architecto sapiente
+            necessitatibus quam totam explicabo libero cupiditate qui iste reprehenderit, fugit minus fuga commodi rerum! Nulla
+            magnam eos omnis provident! Aspernatur beatae ab culpa magnam, quia laudantium in soluta nesciunt voluptas
+            exercitationem commodi quidem quos numquam <i>nisi vel doloribus</i> voluptatibus odit suscipit, rem illo labore
+            asperiores qui. At minima, culpa animi, debitis tempora mollitia, quod error ex quo repellendus nihil! Consectetur
+            quo totam dicta pariatur <b>fuga</b> laudantium?. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
+            asperiores ad excepturi sint voluptatibus deleniti in corrupti magni quod neque quas, quo itaque facilis sapiente eum
+            adipisci cum accusamus voluptatem.
+          </p>
+        </div>
+      </section>
+      <section id="course">
+        <h1 class="text-center mt-5">Course</h1>
+        <div class="row">
+          <div class="gambar">
+            <h4 class="text-center">Front End Developer</h4>
+            <a href="pages/frontEnd/">
+              <div class="text-center">
+                <img src="img/front-end.jpg" alt="" />
+                <span class="text-center">lihat detail</span>
+              </div>
+            </a>
+          </div>
+          <br />
+          <div class="gambar">
+            <h4 class="text-center">Digital Marketing</h4>
+            <a href="pages/digital/">
+              <div class="text-center">
+                <img src="img/digitalMarket.jpeg" alt="" />
+                <span>lihat detail</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script>
+      const button = document.querySelector(".hamburger");
+      const menu = document.getElementById("menu");
+
+      button.addEventListener("click", () => {
+        menu.classList.toggle("slide");
+        button.classList.toggle("color");
+      });
+    </script>
+  </body>
+</html>
